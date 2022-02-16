@@ -1,0 +1,26 @@
+{
+    "name": "trs19",
+    "displayName": "trs19 Config Highlighter",
+    "description": "Trainz 2019 config highlighter",
+    "icon": "images/icon.png",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.64.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "trs19",
+            "aliases": ["trainz", "trs19"],
+            "extensions": [""],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "trs19",
+            "scopeName": "source.trs19",
+            "path": "./syntaxes/trs19.tmLanguage.json"
+        }]
+    }
+}
