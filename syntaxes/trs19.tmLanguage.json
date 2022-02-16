@@ -25,13 +25,13 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.trs19",
-				"match": "\\b(kuid|kuid2|kuid-table|username|kind|trainz-build|mass|script|class|fonts|-path|engine|enginespec|description|category-class|author|organisation|contact-email|contact-website|license|category-region|category-era|extensions|mesh-table|effects|bogeys|thumbnails|-include-table|texture|mass|shadow)\\b"
+				"match": "\\b(kuid|kuid2|kuid-table|username|kind|trainz-build|mass|script|class|fonts|-path|engine|enginespec|description|category-class|author|organisation|contact-email|contact-website|license|category-region|category-era|extensions|mesh-table|effects|bogeys|thumbnails|-include-table|texture|mass|shadow|anim|interior)\\b"
 			}]
 		},
 		"types": {
 			"patterns": [{
 				"name": "invalid.trs19",
-				"match": "\\s*(mesh|default|auto-create|texture|bogey|reversed|width|height|image|att|-parent|max-distance|object-size|obsolete|-table)(:?)"
+				"match": "\\s*(rollstep|attachment-points|allowed-products|string|mesh|default|auto-create|texture|bogey|reversed|width|height|image|-range|att|-parent|max-distance|object-size|obsolete|-table|body)(:?)"
 			}]
 		},
 		"constants": {
