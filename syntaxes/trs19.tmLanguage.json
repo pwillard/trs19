@@ -1,0 +1,68 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "trainz",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include":	"#types"
+		},
+		{
+			"include":	"#constants"
+		},
+		{
+			"include":	"#variables"
+		},
+		{
+			"include":	"#comments"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.trs19",
+				"match": "\\b(kuid|kuid2|kuid-table|username|kind|trainz-build|mass|script|class|fonts|-path|engine|enginespec|description|category-class|author|organisation|contact-email|contact-website|license|category-region|category-era|extensions|mesh-table|effects|bogeys|thumbnails|-include-table|texture|mass|shadow)\\b"
+			}]
+		},
+		"types": {
+			"patterns": [{
+				"name": "invalid.trs19",
+				"match": "\\s*(mesh|default|auto-create|texture|bogey|reversed|width|height|image|att|-parent|max-distance|object-size|obsolete|-table)(:?)"
+			}]
+		},
+		"constants": {
+			"patterns": [{
+					"name": "variable.trs19",
+					"match": "[a-z][a-zA-Z0-9]*|[0-9]+(?:;[a-z][a-zA-Z0-9]*|[0-9]+)?"
+			}]
+		},
+		"variables": {
+			"patterns": [{
+					"name": "storage.type.name.trs19",
+					"match": "[A-Z][a-zA-Z0-9]*(?:;\\b[A-Z][a-zA-Z0-9]+)?"
+			}]
+		},
+		"comments": {
+			"patterns": [{
+				"name": "comment.block.anb",
+				"match": "\\s*#.+$|#"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.trs19",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.trs19",
+					"match": "\\\\."
+				}
+			]
+		}
+	},
+	"scopeName": "source.trs19"
+}
